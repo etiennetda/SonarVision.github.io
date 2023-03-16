@@ -1,41 +1,43 @@
-# Website
+# SonarVision Docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Ce site web est construit avec [Docusaurus 2](https://docusaurus.io/), un générateur de site web statique moderne.
 
 ### Installation
 
 ```
-$ yarn
+$ npm install
 ```
 
-### Local Development
+### Developpement local
 
 ```
-$ yarn start
+$ npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Cette commande démarre un serveur de développement local et ouvre une fenêtre de navigateur. La plupart des modifications sont reflétées en direct sans avoir à redémarrer le serveur.
 
 ### Build
 
 ```
-$ yarn build
+$ npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Cette commande génère du contenu statique dans le répertoire `build` et peut être servi à l'aide de tout service d'hébergement de contenu statique.
 
-### Deployment
+### Déploiement
 
-Using SSH:
+Il suffit de faire un merge sur `main` via une pull request (PR) pour déclencher le déploiement automatique sur Github Pages.
+Les PR sont validés par les propriétaires du projet. Plus d'informations ci-dessous.
 
-```
-$ USE_SSH=true yarn deploy
-```
+Lors d'une PR, le workflow `test-deploy` présent dans `.github/workflows` est déclenché. Il permet de tester que le site
+se build correctement avant de merge sur la branche `main`.
 
-Not using SSH:
+### Processus de contribution
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+1. Forker le projet
+2. Créer une branche pour votre contribution
+3. Faire une PR sur la branche `main` du répo principal
+4. Attendre la validation de la PR par les propriétaires du projet. Si la PR est validée, elle est mergée sur `main`
+6. Le site est automatiquement déployé sur Github Pages
+7. Votre contribution est visible sur [docs.sonarvision.fr](https://docs.sonarvision.fr)
+8. Vous pouvez supprimer votre branche

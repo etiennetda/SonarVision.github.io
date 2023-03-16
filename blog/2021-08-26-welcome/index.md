@@ -1,6 +1,6 @@
 ---
 slug: Bienvenue
-title: Bienvenu
+title: Bienvenue
 authors: [nathan]
 tags: [sonarvision, présentation]
 ---
