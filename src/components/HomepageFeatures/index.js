@@ -4,32 +4,30 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Ultra Précis',
+    Svg: require('@site/static/img/undraw_living.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Notre géolocalisation VPS (Visual Positionning System) permet de vous donner des instructions avec une précision inférieure au mètre.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Accessibilité avant tout',
+    Svg: require('@site/static/img/undraw_map_dark.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        L'application iOS SonarVision a été conçue pour être entièrement accessible via VoiceOver, le lecteur d'écran natif d'Apple.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Une experience humaine',
+    Svg: require('@site/static/img/undraw_pedestrian_crossing.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Les opérateurs de SonarVision veillent à ce que vos trajets soient agréables et sécurisés. Exigez des trajets
+          qui correspondent à vos besoins.
       </>
     ),
   },
