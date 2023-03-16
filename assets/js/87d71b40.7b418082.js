@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_sonarvision=self.webpackChunkdocs_sonarvision||[]).push([[572],{8833:s=>{s.exports=JSON.parse('{"label":"hola","permalink":"/docs-sonarvision/blog/tags/hola","allTagsPath":"/docs-sonarvision/blog/tags","count":1}')}}]);

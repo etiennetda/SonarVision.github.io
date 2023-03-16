@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_sonarvision=self.webpackChunkdocs_sonarvision||[]).push([[8701],{8795:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/docs-sonarvision/blog/tags/docusaurus","allTagsPath":"/docs-sonarvision/blog/tags","count":4}')}}]);
