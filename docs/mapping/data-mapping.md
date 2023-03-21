@@ -4,52 +4,71 @@ sidebar_position: 1
 
 # Mapper sur OpenStreetMap
 
-Nous allons discuter ici de tous les outils mis en place par Sonarvision nous permettant de contribuer à OpenStreetMap.
+Dans cette rubrique, nous présentons les outils mis en place par Sonarvision nous permettant de contribuer à
+OpenStreetMap.
 
-## Qu'est-ce qu'OpenStreetMap ?
+## Qu'est-ce qu'OpenStreetMap (OSM) ?
 
-OpenStreetMap (OSM) est un projet collaboratif en ligne qui vise à créer une carte du monde libre et open source. 
+OpenStreetMap (OSM) est un projet collaboratif en ligne qui vise à créer une carte du monde libre et open source.
 Contrairement aux cartes commerciales, OSM permet à tout le monde de contribuer à la carte.
 
-Les données d'OpenStreetMap sont collectées par des contributeurs du monde entier qui utilisent des appareils GPS, 
-des photos aériennes et des éditeurs en ligne pour ajouter des informations à la carte. 
-Les données sont stockées dans une base de données centrale et peuvent être utilisées gratuitement 
-par quiconque pour créer des cartes personnalisées, des applications de navigation, des visualisations de données et plus encore.
+Les données d'OpenStreetMap sont collectées par des contributeurs du monde entier qui utilisent des appareils GPS,
+des images satellites et des éditeurs en ligne pour ajouter des informations à la carte.
+Les données sont stockées dans une base de données centrale et peuvent être utilisées gratuitement
+par quiconque pour créer des cartes personnalisées, des applications de navigation, des visualisations de données et
+plus encore.
 
-En résumé, OpenStreetMap est un projet communautaire qui fournit des données géographiques précises, libres et ouvertes à tous.
+En résumé, OpenStreetMap est un projet communautaire qui fournit des données géographiques précises, libres et ouvertes
+à tous.
 
 ## Pourquoi contribuer à OpenStreetMap ?
 
-Chez Sonarvision, nous croyons en l'openSource et en sa communauté. Pour générer, nos itinéraires, nous nous reposons sur les données de OSM.
-Cependant, celle-ci reste encore très incomplète concernant la génération d'itinéraire piéton. C'est pourquoi nous contribuons tous les jours à 
-l'amélioration de cette base de données pour d'une part améliorer nos itinéraires et d'autre part offrir la possibilité à d'autre projet d'utiliser ses mêmles données.
-Ainsi nous espérons créer un cercle vertueux qui permettra à l'ensemble des projets se reposant sur OSM d'offrir une meilleure expérience à leur utilisateur.
-Pour résumer, l'union fait la force.
+De nombreuses applications de navigation, dont SonarVision, utilisent les données d'OpenStreetMap pour calculer leurs
+itinéraires.
+Cependant, les graphes filaires piétons restent encore incomplets dans certaines zones et ne permettent pas de générer
+des itinéraires de qualité à Paris par exemple.
+Afin d'améliorer la qualité de notre routage, nous contribuons ouvertement à la base de données d'OpenStreetMap,
+malgré le fait que ces données puissent être utilisées par nos concurrents.
+Nous espérons contribuer à un cercle vertueux qui permettra à l'ensemble des projets se reposant sur OSM d'offrir une
+meilleure expérience à leurs utilisateurs.
 
-## Comment contribuer à OpenStreetMap et aider Sonarvision ?
+## Comment aider Sonarvision avec ses contributions sur OpenStreetMap ?
 
-### Contribuer à OpenStreetMap
-Pour contribuer à OpenStreetMap, il vous suffit de vous rendre sur le site [OpenStreetMap](https://www.openstreetmap.org/) et de créer un compte.
-Rendez-vous ensuite sur l'onglet modifier et commencez à ajouter des informations sur la carte.
+### Créer un compte sur OpenStreetMap
+
+Pour contribuer à OpenStreetMap, il vous suffit de créer un compte sur le
+site [OpenStreetMap](https://www.openstreetmap.org/).
+Rendez-vous ensuite sur l'onglet "Modifier" et commencez à ajouter des informations sur la carte.
 
 ### Contribuer dans le but d'aider SonarVision
-Pour créer nos itinéraires, nous nous reposons sur les données piétonnes de OSM. Cependant, celle-ci reste encore très incomplète dans la majorité des grandes villes.
-Nous avons commencé notre travail de mapping par Paris et notamment par le 14e et 17e arrondissement de Paris. 
+
+Pour créer nos itinéraires, nous nous reposons sur les données piétonnes d'OpenStreetMap. Cependant, celles-ci restent
+encore très incomplètes dans la majorité des grandes villes françaises.
+Nous avons commencé notre travail de cartographie par Paris et notamment par le 15e et 17e arrondissements.
 Voici les informations principales dont nous avons besoins :
-- La position des trottoirs
-- La position des passages piétons
-  - Si celui-ci est équipé d'un feu sonore
 
-### Outils mis à disposition pour le mapping
-Pour effectuer ce mapping nous avons créé un fond de carte, qui nous permet d'afficher les passages piétions, 
-les feux sonores et les trottoirs de la ville de Paris. Ce qui nous permet de mapper de manière précise et rapide sur 
-l'ensemble de la ville de Paris.
+- La position des trottoirs ([Trottoir comme voie séparée](https://wiki.openstreetmap.org/wiki/User:Singing-Poppy/Draft:FR:Recommandations_pour_le_routage_pi%C3%A9ton#Trottoir))
+- La position des passages piétons ([Passage piéton comme voie reliant les trottoirs](https://wiki.openstreetmap.org/wiki/User:Singing-Poppy/Draft:FR:Recommandations_pour_le_routage_pi%C3%A9ton#Passages_pi%C3%A9tons))
+    - Si un passage piéton est équipé d'un feu sonore (utiliser: `traffic_signals:sound=yes` )
 
-Voici les étapes à suivre pour utiliser se layer sur OSM :
-1. Commencer par vous rendre dans l'espace de mapping d'OSM via le lien suivant : [OSM](https://www.openstreetmap.org/edit?editor=id#map=13/48.8588/2.3385)
-2. Puis accéder aux paramètres de fond de carte en cliquant sur la barre d'outils à droite ou avec le raccourci clavier `B`
-3. Puis cliquer sur modifier le fond de carte personnalisé
-4. Ajouter l'URL suivante ([URL du fond de carte](https://api.mapbox.com/styles/v1/la-monf/clatfbyq3000514qnaejzcsmy/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibGEtbW9uZiIsImEiOiJjbGFhejhqdnEwY201M3VwbDZpbmd5ZHZpIn0.-HQmXshZmvpEN6SAeYRlpQ))
+Consulter le wiki suivant pour plus d'informations sur les tags utilisés et les meilleures pratiques :
+https://wiki.openstreetmap.org/wiki/User:Singing-Poppy/Draft:FR:Recommandations_pour_le_routage_pi%C3%A9ton
+
+### Outils mis à disposition pour la cartographie
+
+Pour effectuer cette cartographie, nous avons créé un fond de carte qui nous permet d'afficher les passages piétions,
+les feux sonores et les trottoirs de la ville de Paris. Ce fond de carte nous permet de cartographier de manière précise
+et rapide sur l'ensemble de la ville de Paris.
+
+Voici les étapes à suivre pour utiliser ce fond de carte sur l'éditeur ID d'OpenStreetMap :
+
+1. Commencer par vous rendre dans l'éditeur ID d'OSM via le lien
+   suivant : [OSM](https://www.openstreetmap.org/edit?editor=id#map=13/48.8588/2.3385)
+2. Puis accéder aux paramètres de fond de carte en cliquant sur la barre d'outils à droite ou avec le raccourci
+   clavier `B`
+3. Cliquer sur modifier le fond de carte personnalisé
+4. Ajouter l'URL
+   suivante : `https://api.mapbox.com/styles/v1/la-monf/clatfbyq3000514qnaejzcsmy/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibGEtbW9uZiIsImEiOiJjbGFhejhqdnEwY201M3VwbDZpbmd5ZHZpIn0.-HQmXshZmvpEN6SAeYRlpQ`
 5. Enfin, cliquer sur "Ok" et sélectionner le fond de carte personnalisé
 
 ### Base de données utilisée par notre fond de carte
