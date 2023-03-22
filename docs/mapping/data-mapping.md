@@ -71,7 +71,7 @@ Voici les étapes à suivre pour utiliser ce fond de carte sur l'éditeur ID d'O
    suivante : `https://api.mapbox.com/styles/v1/la-monf/clatfbyq3000514qnaejzcsmy/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibGEtbW9uZiIsImEiOiJjbGFhejhqdnEwY201M3VwbDZpbmd5ZHZpIn0.-HQmXshZmvpEN6SAeYRlpQ`
 5. Enfin, cliquer sur "Ok" et sélectionner le fond de carte personnalisé
 
-![](fond-de-carte-tuto.gif)
+![](Tuto_fond_de_carte.gif)
 
 ### Base de données utilisée par notre fond de carte
 
