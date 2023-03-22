@@ -1,0 +1,8 @@
+{
+  "label": "Cartographie",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Dans cette rubrique nous présentons le travail de cartographie piétonne auquel participe SonarVision"
+  }
+}
