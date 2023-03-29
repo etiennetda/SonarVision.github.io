@@ -5,7 +5,7 @@ sidebar_position: 1
 # Introduction
 
 SonarVision est une application mobile de guidage GPS conçue pour les besoins de personnes déficientes visuelles.
-Dans la suite, nous appellerons simplement **utilisateurs** les personnes déficientes visuelles, formés et confortables
+Dans la suite, nous appellerons simplement **utilisateurs** les personnes déficientes visuelles, formées et confortables
 avec une locomotion indépendante, qui utilisent SonarVision pour effectuer des trajets. Nos utilisateurs effectuent
 leurs trajets avec une canne blanche ou accompagnés d'un chien-guide.
 
@@ -68,7 +68,7 @@ l'utilisateur a les mains libres et le téléphone est légèrement mieux dissim
 ### Conditions lumineuses
 
 Afin de fonctionner, SonarVision doit pouvoir identifier ses alentours. Les trajets de nuits, en particulier dans les
-zones avec peu éclairés sont découragés, puisqu'ils peuvent mener à une perte de la géolocalisation précise et donc à
+zones peu éclairées sont découragés, puisqu'ils peuvent mener à une perte de la géolocalisation précise et donc à
 des instructions erronées. Aujourd'hui, SonarVision indique à son utilisateur de s'arrêter lorsque l'application est
 incapable d'identifier précisément ses alentours.
 
