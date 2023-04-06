@@ -4,10 +4,20 @@
         <title>SonarVision Blog</title>
         <link>https://docs.sonarvision.fr/blog</link>
         <description>SonarVision Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
+        <item>
+            <title><![CDATA[1.3.1 - Bêta]]></title>
+            <link>https://docs.sonarvision.fr/blog/Mise à jour</link>
+            <guid>https://docs.sonarvision.fr/blog/Mise à jour</guid>
+            <pubDate>Sun, 04 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Bonjour à tous,]]></description>
+            <content:encoded><![CDATA[<p>Bonjour à tous,</p><p>Une nouvelle version bêta est disponible. Nous allons publier régulièrement des versions sur TestFlight pour tester avec vous les nouveaux changements avant de les publier sur la version publique (celle sur l'App Store). Cela signifie que la version sur TestFlight sera plus instable que celle sur l'App Store. Libre à vous de télécharger la version que vous souhaitez utiliser. Pour information, si vous téléchargez la version TestFlight, celle-ci remplacera la version App Store sur votre sélecteur d'application. Nous avons donc ajouté un message sur la version bêta vous signalant que vous utilisez actuellement la version bêta afin d'éviter les erreurs.</p><p>Nous souhaitons tout particulièrement connaître votre avis sur les idées d'améliorations pour le guidage. Pour ce faire, nous avons ajouté dans les paramètres une section "fonctionnalité en bêta" où vous pourrez activer ou désactiver certaines fonctionnalités que nous souhaiterions tester avec vous. Dans cette version, nous vous proposons trois nouvelles fonctionnalités à tester concernant le guidage :</p><ul><li><strong>Aide au maintien du téléphone</strong> : permet à l'utilisateur d'avoir un retour sur son maintien du téléphone pendant le guidage. Un téléphone trop vers le haut ou vers le bas est la principale cause d'une perte de précision.</li><li><strong>Retour haptique de la direction générale</strong> : nous essayons un nouveau son de validation lorsque vous retrouvez la bonne orientation superposée avec une vibration du téléphone.</li><li><strong>Retour haptique du cap</strong> : une légère vibration est ressentie lorsque le téléphone est pointé très précisément vers le bon cap.</li></ul><p>Par défaut, ces fonctionnalités sont désactivées. Vous pouvez toutes les activer ou seulement une seule, libre à vous. Je vous conseille dans un premier temps de les tester une à une pour bien les comprendre. Le but de l'expérience est surtout d'obtenir un maximum de retour de votre côté afin de connaître la pertinence de telles ou telles fonctionnalités et également des pistes d'améliorations.</p><p>Passons maintenant aux changements mineurs que cette version intègre :</p><ul><li>Nous avons amélioré notre page d'accueil pour la rendre plus lisible pour les malvoyants.</li><li>Nous avons ajouté un onglet assistance sur la page d'accueil où vous pourrez retrouver le guide d'utilisation et nos informations de contact.</li><li>Nous avons ajouté la politique de confidentialité.</li><li>Nous avons amélioré l'accessibilité de l'ensemble de nos formulaires présents dans l'application.</li><li>Nous avons amélioré la page de prévisualisation d'une route afin d'éviter que l'utilisateur lance un mauvais trajet et se retrouve par la suite dans une situation délicate (par exemple, au départ du domicile, plusieurs trajets peuvent se trouver à proximité, une erreur de sélection peut arriver).</li><li>Nous avons ajouté une alerte au lancement d'un trajet lorsque votre niveau de batterie est faible afin d'éviter à l'utilisateur de se retrouver sans batterie au milieu d'un trajet.</li></ul><p>Si vous avez la moindre question, n'hésitez pas à me contacter directement par téléphone ou par mail.</p><p>Bonne journée à tous,</p><p>Augustin</p>]]></content:encoded>
+            <category>sonarvision</category>
+            <category>bêta</category>
+        </item>
         <item>
             <title><![CDATA[Bienvenue]]></title>
             <link>https://docs.sonarvision.fr/blog/Bienvenue</link>
