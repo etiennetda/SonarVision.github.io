@@ -48,19 +48,21 @@ Nous avons commencé notre travail de cartographie par Paris et notamment par le
 Voici les informations principales dont nous avons besoin :
 
 - La position des
-  trottoirs ([Trottoir comme voie séparée](https://wiki.openstreetmap.org/wiki/User:Singing-Poppy/Draft:FR:Recommandations_pour_le_routage_pi%C3%A9ton#Trottoir))
+  trottoirs ([Trottoir comme voie séparée](https://wiki.openstreetmap.org/wiki/FR:Cheminements_pi%C3%A9tons#Trottoir))
 - La position des passages
-  piétons ([Passage piéton comme voie reliant les trottoirs](https://wiki.openstreetmap.org/wiki/User:Singing-Poppy/Draft:FR:Recommandations_pour_le_routage_pi%C3%A9ton#Passages_pi%C3%A9tons))
+  piétons ([Passage piéton comme voie reliant les trottoirs](https://wiki.openstreetmap.org/wiki/FR:Cheminements_pi%C3%A9tons#Passages_pi%C3%A9tons))
     - Si un passage piéton est équipé d'un feu sonore (utiliser: `traffic_signals:sound=yes` )
 
 Consulter le wiki suivant pour plus d'informations sur les tags utilisés et les meilleures pratiques :
-https://wiki.openstreetmap.org/wiki/User:Singing-Poppy/Draft:FR:Recommandations_pour_le_routage_pi%C3%A9ton
+https://wiki.openstreetmap.org/wiki/FR:Cheminements_pi%C3%A9tons
 
 Ci-dessous, une image illustrant l'application de ces principes au niveau d'une intersection. L'élément sélectionné est
 le passage piéton avec signaux sonores surligné en rouge et situé en haut à gauche.
 ![exemple graphe piéton](exemple_graphe_pieton.jpg 'capture d'écran illustrant le graphe piéton au niveau d'une intersection')
 
-### Outils mis à disposition pour la cartographie
+## Outils mis à disposition pour la cartographie
+
+### Fond de carte Open Data Paris
 
 Pour effectuer cette cartographie, nous avons créé un fond de carte qui nous permet d'afficher les passages piétions,
 les feux sonores et les trottoirs de la ville de Paris. Ce fond de carte nous permet de cartographier de manière précise
@@ -79,7 +81,7 @@ Voici les étapes à suivre pour utiliser ce fond de carte sur l'éditeur ID d'O
 
 ![gif tuyo fond de carte](Tuto_fond_de_carte.gif 'tutoriel: comment ajouter un fond de carte personalisé à ID')
 
-### Base de données utilisée par notre fond de carte
+#### Base de données utilisée par notre fond de carte
 
 | Base de donnée                                                                                                                                                                                               | Dernière mise à jour |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------:|
@@ -87,3 +89,16 @@ Voici les étapes à suivre pour utiliser ce fond de carte sur l'éditeur ID d'O
 | [Plan de voirie - Passages piétons (Paris)](https://opendata.paris.fr/explore/dataset/plan-de-voirie-passages-pietons/information/?disjunctive.num_pave&location=16,48.87356,2.33009&basemap=jawg.streets)   |      20/03/2023      |
 | [Plan de voirie - Trottoirs filaires (Paris)](https://opendata.paris.fr/explore/dataset/plan-de-voirie-trottoirs/information/?disjunctive.num_pave&disjunctive.lib_level&disjunctive.lib_classe)             |      20/03/2023      |
 | [Plan de voirie - Trottoirs - Emprises (Paris)](https://opendata.paris.fr/explore/dataset/plan-de-voirie-trottoirs-emprises/information/?disjunctive.num_pave&basemap=jawg.dark&location=20,48.8864,2.31302) |      20/03/2023      |
+
+### Calculateur d'itinéraires
+
+Nous avons déployé un calculateur d'itinéraire ouvert grâce à Graphhopper qui exploite directement les données du filaire piéton d'OpenStreetMap.
+
+Le calculateur Parisien est disponible ici : https://nav.sonarvision.fr
+
+Ce calculateur n'utilise comme entrée que le filaire piéton. Il n'empruntera jamais de voies qui ne sont pas conçues pour les piétons. Cela présente le désavantage que le calcul d'itinéraire n'est possible que dans les zones où il existe un graphe piéton complet.
+Pour visualiser le graphe piéton, vous pouvez activer les couches "Show Routing Graph" ou encore "Show Urban Density" en haut à droite de l'écran.
+
+Cet outil permet donc de se rendre compte des zones qu'il reste à cartographier ainsi que la correction des itinéraires générés. Il est mis à jour toute les 2 heures.
+
+
